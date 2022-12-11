@@ -1,9 +1,9 @@
 const navigation: Array<Object> = [
-    {url: '/about', title: 'About'},
     {url: '/home', title: 'Home'},
-    {url: '/contact', title: 'Contact'},
+    {url: '/about', title: 'About'},
     {url: '/resume', title: 'Resume'},
-    {url: '/blog', title: 'Blog'}
+    {url: '/blog', title: 'Blog'},
+    {url: '/contact', title: 'Contact'},
 ]
 
 export { navigation };

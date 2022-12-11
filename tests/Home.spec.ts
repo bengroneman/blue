@@ -17,3 +17,12 @@ test('navigation is correct', async ({ page }) => {
         await expect(element).toBeVisible();
     }
 });
+
+test('footer navigation is correct', async ({ page }) => {
+    await page.goto("/");
+
+    for (const item of navigation) {
+        const element = await page.locator(`#footer-${item['title']}`)
+        await expect(element).toBeVisible();
+    }
+});

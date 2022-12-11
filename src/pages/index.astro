@@ -1,35 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Header from '../components/Header.svelte';
 ---
 
 <Layout title="Blue Engineering | Home">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+	    <Header
+            title="Home"
+            short_title="Blue Engineering LLC"
+            long_title="Developer with a strong focus on Domain Driven Design, and thorough testing"
+        />
+
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="https://github.com/bengroneman/AlmostHomeWY"
+				title="Almost Home Wyoming - Concept"
+				body="A static website built with Strapi and React for a local non-profit organization"
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="https://github.com/bengroneman/Tickets"
+				title="Ticketing Application Concept"
+				body="A Django backend and Vue frontend, built with reporting dashboards in mind"
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				href="https://github.com/bengroneman/waterforwildlife"
+				title="Water for Wildlife Exhibit"
+				body="A museum exhibit built with a Raspberry Pi with a custom image"
 			/>
 		</ul>
 	</main>
@@ -39,7 +36,7 @@ import Card from '../components/Card.astro';
 	main {
 		margin: auto;
 		padding: 1.5rem;
-		max-width: 60ch;
+		max-width: 80%;
 	}
 	h1 {
 		font-size: 3rem;

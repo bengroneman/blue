@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.svelte';
+import Footer from '../components/Footer.svelte';
 import '../assets/css/base.css';
 export interface Props {
 	title: string;
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	<body>
         <Navigation/>
 		<slot />
+        <Footer/>
 	</body>
 </html>
 <style is:global>
