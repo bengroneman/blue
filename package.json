@@ -8,7 +8,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
     "test": "npx playwright test && npx playwright show-report"
   },
   "dependencies": {

@@ -1,11 +1,5 @@
-<script>
-    let navigation = [
-        {url: '/about', title: 'About'},
-        {url: '/home', title: 'Home'},
-        {url: '/contact', title: 'Contact'},
-        {url: '/resume', title: 'Resume'},
-        {url: '/blog', title: 'Blog'}
-    ]
+<script lang="ts">
+    import { navigation } from "../data/navigation";
 </script>
 <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
