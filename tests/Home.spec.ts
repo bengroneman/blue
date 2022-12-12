@@ -1,4 +1,4 @@
-// @ts-ignore
+//@ts-ignore
 import { navigation } from '../src/data/navigation.ts';
 import { test, expect } from '@playwright/test';
 
