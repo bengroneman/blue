@@ -1,4 +1,4 @@
-<form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+<form name="contact" class="grid grid-cols-1 gap-y-6" netlify>
   <div>
     <label for="full-name" class="sr-only">Full name</label>
     <input type="text" name="full-name" id="full-name" autocomplete="name" class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Full name">
