@@ -1,5 +1,5 @@
 const navigation: Array<Object> = [
-    {url: '/home', title: 'Home'},
+    {url: '/', title: 'Home'},
     {url: '/about', title: 'About'},
     {url: '/resume', title: 'Resume'},
     {url: '/blog', title: 'Blog'},

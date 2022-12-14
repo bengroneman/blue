@@ -5,6 +5,7 @@ import { test, expect } from '@playwright/test';
 
 test('meta is correct', async ({ page }) => {
     await page.goto("/");
+    await page.locator('#Home').click();
 
     await expect(page).toHaveTitle('Blue Engineering | Home');
 });
