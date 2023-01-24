@@ -1,7 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.svelte';
+import ContentWrapper from '../components/ContentWrapper.svelte';
+import CTA from '../components/CTA.svelte';
+
+const response = await fetch('https://admin.blueengineering.dev/api/about-page?populate=*');
+const { data } = await response.json();
+const aboutContent = data.attributes;
+console.log(aboutContent)
 ---
 <Layout title="About | Blue Engineering">
-    <Header title="About Ben Groneman" short_title="Blue Engineering" />
+    <Header title={aboutContent.Hero.Header} short_title={aboutContent.Hero.SubHeader} />
+    <CTA
+      header={aboutContent.CTA.Header}
+      body={aboutContent.CTA.Body}
+      link={aboutContent.CTA.link}
+    ></CTA>
+    <ContentWrapper>
+    </ContentWrapper>
 </Layout>
